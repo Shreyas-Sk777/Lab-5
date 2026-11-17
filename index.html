@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAIN (Deemed-to-be-University) - FET</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.75);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        .address {
+            font-size: 1.3rem;
+            color: #bdc3c7;
+            margin: 0;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        marquee {
+            width: 100%;
+            max-width: 900px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            letter-spacing: 0.5px;
+        }
+
+        .courses-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px 60px;
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            width: 100%;
+            max-width: 950px; /* Widened to fit the long collaboration names */
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .courses-section h2 {
+            font-size: 2.2rem;
+            margin-top: 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .dept-card {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 20px 30px;
+            margin-bottom: 25px;
+            transition: transform 0.2s;
+        }
+
+        .dept-card:hover {
+            transform: scale(1.01);
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .dept-card h3 {
+            margin-top: 0;
+            color: #ecf0f1;
+            font-size: 1.4rem;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .dept-card ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin: 0;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .dept-card li {
+            margin-bottom: 10px;
+        }
+
+        /* --- CRITICAL REQUIREMENT: Unique Styles for Each Department's Courses --- */
+        
+        .style-mech ul {
+            color: #f1c40f; /* Yellow */
+            font-weight: bold; /* Bold */
+            font-family: 'Courier New', Courier, monospace; /* Monospace */
+        }
+
+        .style-civil ul {
+            color: #2ecc71; /* Green */
+            font-style: italic; /* Italic */
+            font-family: 'Georgia', serif; /* Serif */
+        }
+
+        .style-ece ul {
+            color: #e67e22; /* Orange */
+            text-decoration: underline; /* Underline */
+            font-family: 'Impact', Charcoal, sans-serif; /* Thick/Impact */
+            font-weight: normal;
+        }
+
+        .style-eee ul {
+            color: #9b59b6; /* Purple */
+            font-weight: 900; /* Extra Bold */
+            font-style: oblique; /* Oblique */
+            font-family: 'Arial', sans-serif; /* Sans-serif */
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        
+        <marquee behavior="scroll" direction="left" scrollamount="8">
+            🚨 Important: Placements Drive starts October 15th! Join us for the Annual Tech Fest next Friday! 🚨
+        </marquee>
+
+        <div class="header-section">
+            <h1>JAIN (Deemed-to-be-University)</h1>
+            <p class="address">Faculty of Engineering and Technology (FET), Bangalore</p>
+        </div>
+
+        <div class="courses-section">
+            <h2>B.Tech Programs Offered</h2>
+            
+            <div class="dept-card style-mech">
+                <h3>Department of Mechanical Engineering</h3>
+                <ul>
+                    <li>Mechanical Engineering in association with TATA TECHNOLOGIES</li>
+                    <li>Mechanical Engineering (Mechatronics) in association with IMTMA</li>
+                    <li>Mechanical Engineering (Robotics)</li>
+                </ul>
+            </div>
+
+            <div class="dept-card style-civil">
+                <h3>Department of Civil Engineering</h3>
+                <ul>
+                    <li>Civil Engineering</li>
+                    <li>Civil Engineering (Environmental Geo technology)</li>
+                    <li>Civil Engineering (Construction technology)</li>
+                </ul>
+            </div>
+
+            <div class="dept-card style-ece">
+                <h3>Department of Electronics and Communications Engineering</h3>
+                <ul>
+                    <li>Electronics and Communication Engineering in collaboration with TEXAS INSTRUMENTS</li>
+                    <li>Electronics and Communication Engineering (VLSI Design & Technology)</li>
+                    <li>Electronics and Communication Engineering (Robotics)</li>
+                </ul>
+            </div>
+
+            <div class="dept-card style-eee">
+                <h3>Department of Electrical & Electronics Engineering</h3>
+                <ul>
+                    <li>Electrical & Electronics Engineering in collaboration with SIEMENS</li>
+                    <li>Electrical and Electronics Engineering (Electric Vehicles) in association with SIEMENS</li>
+                    <li>Electrical and Electronics Engineering (Microgrid Technologies) in association with SIEMENS</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
